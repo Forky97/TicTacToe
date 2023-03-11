@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Игра</title>
+
+    <style>
+     table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+}
+
+td {
+  border: 2px solid #000;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  font-size: 3em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+td:hover {
+  background-color: #ddd;
+}
+
+td:active {
+  background-color: #aaa;
+}
+    </style>
+
+</head>
+<body>
+
+
+<table>
+      <tr>
+        <td id="1" onclick="click(1)"></td>
+        <td id="2" onclick="click(2)"></td>
+        <td id="3" onclick="click(3)"></td>
+      </tr>
+      <tr>
+        <td id="4" onclick="click(4)"></td>
+        <td id="5" onclick="click(5)"></td>
+        <td id="6" onclick="click(6)"></td>
+      </tr>
+      <tr>
+        <td id="7" onclick="click(7)"></td>
+        <td id="8" onclick="click(8)"></td>
+        <td id="9" onclick="click(9)"></td>
+      </tr>
+    </table>
+
+
+
+<script>
+
+    var ws = new WebSocket("ws://localhost:8000/ws")
+
+
+</script>
+
+</body>
+</html>
