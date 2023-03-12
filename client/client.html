@@ -38,19 +38,19 @@ td:active {
 
 <table>
       <tr>
-        <td id="1" onclick="click(1)"></td>
-        <td id="2" onclick="click(2)"></td>
-        <td id="3" onclick="click(3)"></td>
+        <td id="1" onclick="cclick(1)">X</td>
+        <td id="2" onclick="cclick(2)">X</td>
+        <td id="3" onclick="cclick(3)">X</td>
       </tr>
       <tr>
-        <td id="4" onclick="click(4)"></td>
-        <td id="5" onclick="click(5)"></td>
-        <td id="6" onclick="click(6)"></td>
+        <td id="4" onclick="cclick(4)">X</td>
+        <td id="5" onclick="cclick(5)">X</td>
+        <td id="6" onclick="cclick(6)">X</td>
       </tr>
       <tr>
-        <td id="7" onclick="click(7)"></td>
-        <td id="8" onclick="click(8)"></td>
-        <td id="9" onclick="click(9)"></td>
+        <td id="7" onclick="cclick(7)">X</td>
+        <td id="8" onclick="cclick(8)">X</td>
+        <td id="9" onclick="cclick(9)">X</td>
       </tr>
     </table>
 
@@ -58,8 +58,12 @@ td:active {
 
 <script>
 
-    var ws = new WebSocket("ws://localhost:8000/ws")
+    var ws = new WebSocket("ws://localhost:8000/ws");
 
+    function cclick(id) {
+    console.log(id)
+    ws.send('
+    }
 
 </script>
 
